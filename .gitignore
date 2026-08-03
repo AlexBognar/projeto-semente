@@ -1,0 +1,11 @@
+# Godot 4 generated editor cache
+.godot/
+
+# Visual Studio / VS Code local state
+.vs/
+*.csproj.user
+.vscode/
+
+# Operating-system files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://c0iguhvce6mla"]
+
+[ext_resource type="Texture2D" uid="uid://bb5wr0uukryes" path="res://icon.svg" id="1_glv2v"]
+[ext_resource type="Script" uid="uid://dggxy3s7klxr5" path="res://Player.cs" id="1_uu6xs"]
+[ext_resource type="Texture2D" uid="uid://e1umdwamkbw0" path="res://rock.svg" id="3_r0du0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_glv2v"]
+size = Vector2(122, 125)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_otpda"]
+size = Vector2(650, 650)
+
+[node name="World" type="Node2D" unique_id=1999358536]
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=1682603710]
+position = Vector2(320, 180)
+script = ExtResource("1_uu6xs")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=1563270371]
+texture = ExtResource("1_glv2v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1849432395]
+position = Vector2(0, -1.5)
+shape = SubResource("RectangleShape2D_glv2v")
+
+[node name="Rock" type="StaticBody2D" parent="." unique_id=1194527994]
+position = Vector2(500, 180)
+scale = Vector2(0.2, 0.2)
+
+[node name="Sprite2D" type="Sprite2D" parent="Rock" unique_id=257613453]
+texture = ExtResource("3_r0du0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rock" unique_id=1534400283]
+position = Vector2(2, 7)
+shape = SubResource("RectangleShape2D_otpda")
