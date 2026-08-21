@@ -14,7 +14,7 @@ Explorar → Coletar recursos → Retornar à base → Fabricar → Construir �
 
 ## Tecnologia
 
-- Engine: Godot 4
+- Engine: Godot 4.7.1
 - Linguagem: C# / .NET
 - Plataforma inicial: PC
 - Estilo: 2D top-down
